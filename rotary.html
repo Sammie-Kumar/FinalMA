@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohini Devi Rotary | Rotary Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Rohini Devi Rotary</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="farm.html">Farm</a></li>
+      <li><a href="eyehospital.html">Eye Hospital</a></li>
+      <li><a href="rotary.html" class="active">Rotary</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+
+  <main class="rotary-container">
+    <h1>Our Rotary Projects</h1>
+    <div class="project-grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Clean water project">
+        <h3>Clean Water Initiative</h3>
+        <p>Bringing safe drinking water to rural communities through borewells and filtration systems.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Education support">
+        <h3>Education Support</h3>
+        <p>Providing school supplies and scholarships for underprivileged students.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Health camps">
+        <h3>Health Camps</h3>
+        <p>Organizing free medical camps and vaccination drives in underserved regions.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menuToggle').onclick = function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>

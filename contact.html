@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohini Devi Rotary | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Rohini Devi Rotary</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="farm.html">Farm</a></li>
+      <li><a href="eyehospital.html">Eye Hospital</a></li>
+      <li><a href="rotary.html">Rotary</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Fill out the form below or reach out via email.</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email: info@rohinidevirotary.org</p>
+      <p>Phone: +1 (555) 234-5678</p>
+      <p>Address: 123 Rotary Lane, Bellevue, WA</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menuToggle').onclick = function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>
