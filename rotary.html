@@ -3,52 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohini Devi Rotary | Rotary Projects</title>
+  <title>Rohini Devi Rotary | Rotary</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">Rohini Devi Rotary</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="farm.html">Farm</a></li>
-      <li><a href="eyehospital.html">Eye Hospital</a></li>
-      <li><a href="rotary.html" class="active">Rotary</a></li>
-    </ul>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  </nav>
 
-  <main class="rotary-container">
-    <h1>Our Rotary Projects</h1>
-    <div class="project-grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180" alt="Clean water project">
-        <h3>Clean Water Initiative</h3>
-        <p>Bringing safe drinking water to rural communities through borewells and filtration systems.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180" alt="Education support">
-        <h3>Education Support</h3>
-        <p>Providing school supplies and scholarships for underprivileged students.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180" alt="Health camps">
-        <h3>Health Camps</h3>
-        <p>Organizing free medical camps and vaccination drives in underserved regions.</p>
-      </div>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">Rohini Devi Rotary</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="farm.html">Farm</a></li>
+    <li><a href="eyehospital.html">Eye Hospital</a></li>
+    <li><a href="rotary.html" class="active">Rotary</a></li>
+  </ul>
+  <div class="menu-toggle" id="menuToggle">&#9776;</div>
+</nav>
+
+<main class="rotary-container">
+
+  <!-- Hero Section -->
+  <section class="rotary-hero grid-layout">
+    <div class="rotary-text">
+      <h1>Rohini Devi Rotary Organization</h1>
+      <p>
+        Rohini Devi Rotary is committed to service above self. Founded by Col. Binay Kumar (Retd), it focuses on empowering communities through education, healthcare, agriculture, and social development initiatives. Our members strive to make a meaningful difference locally and globally.
+      </p>
     </div>
-  </main>
+    <div class="rotary-image">
+      <img src="images/placeholder-rotary.jpg" alt="Rotary organization event">
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
-  </footer>
+  <!-- Core Initiatives -->
+  <section class="rotary-initiatives">
+    <h2>Our Core Initiatives</h2>
+    <ul>
+      <li><strong>Education Programs:</strong> Scholarships, school infrastructure, and literacy campaigns.</li>
+      <li><strong>Health & Wellness:</strong> Eye camps, vaccination drives, and awareness programs.</li>
+      <li><strong>Agriculture Support:</strong> Farms, training, and resources for local farmers.</li>
+      <li><strong>Community Development:</strong> Skill-building, clean water access, and empowerment projects.</li>
+      <li><strong>Global Partnerships:</strong> Collaboration with Rotary International and other organizations.</li>
+    </ul>
+  </section>
 
-  <script>
-    document.getElementById('menuToggle').onclick = function() {
-      document.getElementById('navLinks').classList.toggle('active');
-    };
-  </script>
+  <!-- Events & Impact -->
+  <section class="rotary-events grid-layout">
+    <div class="event">
+      <h3>Annual Eye Camp</h3>
+      <p>Over 1,000 patients screened and treated each year, helping prevent blindness in underserved areas.</p>
+    </div>
+
+    <div class="event">
+      <h3>Farm Training Program</h3>
+      <p>Local farmers trained in sustainable agriculture practices, improving food security and income.</p>
+    </div>
+
+    <div class="event">
+      <h3>Community Workshops</h3>
+      <p>Workshops on hygiene, health, and education reach hundreds of community members annually.</p>
+    </div>
+  </section>
+
+  <!-- Get Involved / Join -->
+  <section class="rotary-cta">
+    <h2>Join or Support Us</h2>
+    <p>
+      Be a part of the movement to transform lives. Volunteer, donate, or partner with us to make a lasting impact in our communities.
+    </p>
+    <button><a href="contact.html">Contact Us</a></button>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('menuToggle').onclick = function() {
+  document.getElementById('navLinks').classList.toggle('active');
+};
+</script>
+
 </body>
 </html>

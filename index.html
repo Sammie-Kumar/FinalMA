@@ -6,65 +6,103 @@
   <title>Rohini Devi Rotary | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">Rohini Devi Rotary</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="farm.html">Farm</a></li>
-      <li><a href="eyehospital.html">Eye Hospital</a></li>
-      <li><a href="rotary.html">Rotary</a></li>
-    </ul>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  </nav>
 
-  <main class="home-container">
-    <section class="intro">
-      <div class="intro-text">
-        <h1>Welcome to the Rohini Devi Rotary</h1>
-        <p>
-          The Rohini Devi Rotary is dedicated to fostering community development and humanitarian service. 
-          Through education, healthcare, and sustainability projects, we aim to empower lives and create lasting change.
-        </p>
-        <p>
-          Explore our initiatives — from the Eye Hospital’s life-changing vision programs to our sustainable farming projects 
-          that support local communities and promote environmental balance.
-        </p>
-      </div>
-      <div class="intro-image">
-        <img src="images/Black Placeholder.jpg" alt="Community service placeholder image">
-      </div>
-    </section>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">Rohini Devi Rotary</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="farm.html">Farm</a></li>
+    <li><a href="eyehospital.html">Eye Hospital</a></li>
+    <li><a href="rotary.html">Rotary</a></li>
+  </ul>
+  <div class="menu-toggle" id="menuToggle">&#9776;</div>
+</nav>
 
-    <section class="mission">
-      <h2>Our Mission</h2>
+<main class="home-container">
+
+  <!-- Introduction -->
+  <section class="intro grid-layout">
+    <div class="intro-text">
+      <h1>Welcome to the Rohini Devi Rotary</h1>
+
       <p>
-        Our mission is to serve with compassion and commitment. We strive to improve quality of life through 
-        medical outreach, educational programs, and agricultural innovation — ensuring a brighter, more sustainable future for all.
+        Col. Binay Kumar (Retd) and Mrs. Saroj Kumar have dedicated their lives to service, community empowerment, and sustainable development. After a distinguished military career, Col. Kumar returned to Hazaribagh with a commitment to “give back to society,” using his experience, skills, and resources to uplift local communities.
       </p>
-    </section>
 
-    <section class="cta">
-      <h2>Get Involved</h2>
       <p>
-        Join us in our efforts to bring positive change. Whether by volunteering, donating, or spreading awareness, 
-        your involvement can make a meaningful difference in our community.
+        Their work today spans sustainable agriculture at Prakriti Biotech Farm, accessible community eye care through the Rohini Devi Rotary Eye Hospital, women’s vocational empowerment, and innovative environmental engineering solutions including the Prakriti Jal Urja Pump.
       </p>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
-  </footer>
+      <p>
+        Together, they continue to create opportunities, restore livelihoods, and improve quality of life across Hazaribagh and surrounding regions.
+      </p>
+    </div>
 
-  <script>
-    document.getElementById('menuToggle').onclick = function() {
-      document.getElementById('navLinks').classList.toggle('active');
-    };
-  </script>
+    <div class="intro-image">
+      <img src="images/1 Rohini Devi Rotary Netralaya.JPG " alt="Community service image">
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      To serve with compassion, strengthen local communities, and promote sustainable development through accessible healthcare, innovative farming, women’s economic empowerment, and environmentally responsible engineering.
+    </p>
+  </section>
+
+  <!-- Initiatives -->
+  <section class="initiatives grid-layout">
+
+    <div class="initiative">
+      <img src="images/Paddy Fields.png" alt="Farm image">
+      <h3>Prakriti Biotech Farm</h3>
+      <p>
+        A model of organic farming inspired by traditional knowledge and modern sustainability practices. The farm produces organic crops, supports local livelihoods, and serves as a learning hub for environmentally conscious agriculture.
+      </p>
+    </div>
+
+    <div class="initiative">
+      <img src="images/Patients Getting Homecare.jpg" alt="Eye Hospital image">
+      <h3>Rohini Devi Rotary Eye Hospital</h3>
+      <p>
+        A community-focused hospital offering cataract surgeries, screenings, and preventive care. Dedicated teams ensure that quality eye care is accessible to all, regardless of income.
+      </p>
+    </div>
+
+    <div class="initiative">
+      <img src="images/2 Visit of John Miles & Fiona Miles on 20 Dec 2014 during Planning & Execution.JPG" alt="Rotary image">
+      <h3>Rotary Community Work</h3>
+      <p>
+        Through local and international partnerships, Rotary initiatives support education, health camps, disaster relief, vocational training, and programs designed to uplift underserved families.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Get Involved</h2>
+    <p>Join our efforts to support health, education, and sustainable development in Hazaribagh.</p>
+    <button><a href="contact.html">Contact Us</a></button>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('menuToggle').onclick = function() {
+  document.getElementById('navLinks').classList.toggle('active');
+};
+</script>
+
 </body>
 </html>
-
-

@@ -6,46 +6,101 @@
   <title>Rohini Devi Rotary | About</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">Rohini Devi Rotary</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="farm.html">Farm</a></li>
-      <li><a href="eyehospital.html">Eye Hospital</a></li>
-      <li><a href="rotary.html">Rotary</a></li>
+
+<nav class="navbar">
+  <div class="logo">Rohini Devi Rotary</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="farm.html">Farm</a></li>
+    <li><a href="eyehospital.html">Eye Hospital</a></li>
+    <li><a href="rotary.html">Rotary</a></li>
+  </ul>
+  <div class="menu-toggle" id="menuToggle">&#9776;</div>
+</nav>
+
+<main class="about-container">
+
+  <section class="about-section">
+    <div class="about-image">
+      <img src="https://via.placeholder.com/450x300" alt="Rotary members working together">
+    </div>
+
+    <div class="about-text">
+      <h1>About Us</h1>
+      <p>
+        The Rohini Devi Rotary is built upon the lifelong values and service journeys of Col. Binay Kumar (Retd) and
+        Mrs. Saroj Kumar. Their commitment to education, rural development, and humanitarian service continues to guide
+        every initiative across Hazaribagh.
+      </p>
+    </div>
+  </section>
+
+  <!-- COL. BINAY KUMAR -->
+  <section>
+    <h2>Col. Binay Kumar (Retd)</h2>
+
+    <h3>Education</h3>
+    <ul>
+      <li>B.Sc. Agriculture (1971)</li>
+      <li>M.Sc. Agriculture — ICAR JRF (1974)</li>
+      <li>Bachelor’s in Civil Engineering, CME Pune (1984)</li>
+      <li>Defence Services Staff College Graduate (1988)</li>
+      <li>LLB (2021)</li>
     </ul>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  </nav>
 
-  <main class="about-container">
-    <section class="about-section">
-      <div class="about-image">
-        <img src="https://via.placeholder.com/450x300" alt="Rotary members working together">
-      </div>
-      <div class="about-text">
-        <h1>About Us</h1>
-        <p>
-          The Rohini Devi Rotary was founded to uplift communities through service, education, and sustainable development. 
-          Over the years, we have grown into a vibrant organization dedicated to meaningful change.
-        </p>
-        <p>
-          Our values—compassion, collaboration, and innovation—guide every initiative, from healthcare programs to environmental stewardship.
-        </p>
-      </div>
-    </section>
-  </main>
+    <h3>Military Service</h3>
+    <ul>
+      <li>Commissioned in 1975</li>
+      <li>Served with the Indian Peace Keeping Force in Sri Lanka</li>
+      <li>Key staff appointments: DAQMG, BM</li>
+      <li>Commanded an Engineer Regiment during Kargil (Op Vijay, 1999)</li>
+      <li>Retired in 2005</li>
+    </ul>
 
-  <footer class="footer">
-    <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
-  </footer>
+    <h3>Second Innings & Social Work</h3>
+    <ul>
+      <li>Returned to Masipiri to develop Prakriti Biotech Farm</li>
+      <li>Joined Rotary in 2012</li>
+      <li>Founded the Rohini Devi Rotary Eye Hospital</li>
+      <li>Established women’s vocational empowerment initiatives</li>
+      <li>Inventor of the Prakriti Jal Urja Pump — National Award (2010)</li>
+    </ul>
+  </section>
 
-  <script>
-    document.getElementById('menuToggle').onclick = function() {
-      document.getElementById('navLinks').classList.toggle('active');
-    };
-  </script>
+  <!-- MRS SAROJ KUMAR -->
+  <section>
+    <h2>Mrs. Saroj Kumar</h2>
+
+    <h3>Education</h3>
+    <ul>
+      <li>B.A. Political Science (1975)</li>
+      <li>B.Ed (1984)</li>
+    </ul>
+
+    <h3>Career & Community Work</h3>
+    <ul>
+      <li>Primary school teacher for 15 years</li>
+      <li>Active member of Inner Wheel and Rotary</li>
+      <li>Trustee & administrator of the Eye Hospital</li>
+      <li>Provides hands-on care and support to admitted patients</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('menuToggle').onclick = function() {
+  document.getElementById('navLinks').classList.toggle('active');
+};
+</script>
+
 </body>
 </html>

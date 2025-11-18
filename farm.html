@@ -3,44 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohini Devi Rotary | Farm</title>
+  <title>Rohini Devi Rotary | Prakriti Biotech Farm</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">Rohini Devi Rotary</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="farm.html" class="active">Farm</a></li>
-      <li><a href="eyehospital.html">Eye Hospital</a></li>
-      <li><a href="rotary.html">Rotary</a></li>
-    </ul>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  </nav>
 
-  <main class="farm-container">
-    <h1>Our Sustainable Farm</h1>
-    <p>
-      The Rohini Devi Farm integrates traditional farming with modern sustainability practices, providing fresh produce and economic opportunity.
-    </p>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">Rohini Devi Rotary</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="farm.html" class="active">Farm</a></li>
+    <li><a href="eyehospital.html">Eye Hospital</a></li>
+    <li><a href="rotary.html">Rotary</a></li>
+  </ul>
+  <div class="menu-toggle" id="menuToggle">&#9776;</div>
+</nav>
 
-    <div class="farm-grid">
-      <div><img src="https://via.placeholder.com/300x200" alt="Farm field"><p>Organic crops</p></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Farm workers"><p>Community farming</p></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Irrigation system"><p>Eco irrigation</p></div>
+<main class="farm-container">
+
+  <!-- Hero Section -->
+  <section class="farm-hero grid-layout">
+    <div class="farm-text">
+      <h1>Prakriti Biotech Farm</h1>
+      <p>
+        Prakriti Biotech Farm is a model of sustainable agriculture and environmental stewardship, inspired by traditional farming practices and modern scientific innovation. Founded by Col. Binay Kumar (Retd), the farm serves as a hub for organic crop production, community learning, and livelihood development.
+      </p>
     </div>
-  </main>
+    <div class="farm-image">
+      <img src="images/placeholder-farm-hero.jpg" alt="Prakriti Biotech Farm landscape">
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
-  </footer>
+  <!-- Our Practices -->
+  <section class="farm-practices">
+    <h2>Our Practices</h2>
+    <ul>
+      <li><strong>Organic Agriculture:</strong> Producing chemical-free crops while maintaining soil health.</li>
+      <li><strong>Water Conservation:</strong> Innovative irrigation techniques reduce water usage and promote sustainability.</li>
+      <li><strong>Renewable Energy:</strong> Solar-powered pumps and energy-efficient infrastructure.</li>
+      <li><strong>Community Training:</strong> Workshops on farming techniques for local farmers and students.</li>
+      <li><strong>Research & Innovation:</strong> Experimenting with high-yield crops and eco-friendly farming technologies.</li>
+    </ul>
+  </section>
 
-  <script>
-    document.getElementById('menuToggle').onclick = function() {
-      document.getElementById('navLinks').classList.toggle('active');
-    };
-  </script>
+  <!-- Crop Showcase -->
+  <section class="farm-crops grid-layout">
+    <div class="crop">
+      <img src="images/placeholder-crops1.jpg" alt="Organic vegetables">
+      <h3>Organic Vegetables</h3>
+      <p>Seasonal vegetables grown without pesticides, ensuring healthy food for local communities.</p>
+    </div>
+
+    <div class="crop">
+      <img src="images/placeholder-crops2.jpg" alt="Herbs and medicinal plants">
+      <h3>Herbs & Medicinal Plants</h3>
+      <p>Locally-sourced herbs cultivated for both traditional remedies and modern research.</p>
+    </div>
+
+    <div class="crop">
+      <img src="images/placeholder-crops3.jpg" alt="Fruit trees">
+      <h3>Fruit Orchards</h3>
+      <p>Fruit trees planted to promote biodiversity and support nutritional needs of the region.</p>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section class="farm-cta">
+    <h2>Visit or Collaborate</h2>
+    <p>
+      We welcome students, researchers, and community members to visit the farm, participate in workshops, or learn about sustainable farming practices.
+    </p>
+    <button><a href="contact.html">Contact Us</a></button>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Rohini Devi Rotary. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('menuToggle').onclick = function() {
+  document.getElementById('navLinks').classList.toggle('active');
+};
+</script>
+
 </body>
 </html>
