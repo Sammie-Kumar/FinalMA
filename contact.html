@@ -13,11 +13,11 @@
   <div class="logo">Rohini Devi Rotary</div>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
     <li><a href="farm.html">Farm</a></li>
     <li><a href="eyehospital.html">Eye Hospital</a></li>
     <li><a href="rotary.html">Rotary</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
   <div class="menu-toggle" id="menuToggle">&#9776;</div>
 </nav>
@@ -26,28 +26,104 @@
   <h1>Contact Us</h1>
   <p>If you would like to schedule a visit, request information, or support our initiatives, please reach out.</p>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
+  <!-- Success Message (Hidden by default) -->
+  <div id="successMessage" class="success-message" style="display: none;">
+    <h3>Thank You!</h3>
+    <p id="successText"></p>
+  </div>
+
+  <!-- Contact Form -->
+  <form class="contact-form" id="contactForm">
+    <div class="form-group">
+      <label for="fullName">Your Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
   </form>
 
-  <div class="contact-info">
-    <h3>General Contact</h3>
-    <p>Email: kumarbinay51@yahoo.com</p>
-    <p>Phone: +91-9XXXXXXXXX</p>
-    <p>Address: Masipiri, Hazaribagh, Jharkhand</p>
+  <!-- Contact Information Cards -->
+  <section class="contact-info-section">
+    <h2>How to Reach Us</h2>
+    <div class="contact-info-grid">
+      <div class="contact-card">
+        <h3>General Contact</h3>
+        <p><strong>Email:</strong> kumarbinay51@yahoo.com</p>
+        <p><strong>Phone:</strong> +91-9XXXXXXXXX</p>
+        <p><strong>Address:</strong> Masipiri, Hazaribagh, Jharkhand</p>
+      </div>
 
-    <h3>Eye Hospital</h3>
-    <p>For appointments and screenings</p>
+      <div class="contact-card">
+        <h3>Eye Hospital</h3>
+        <p>For appointments and screenings</p>
+        <p><strong>Focus:</strong> Eye care & community outreach</p>
+      </div>
 
-    <h3>Prakriti Biotech Farm</h3>
-    <p>For visits, research, or sustainability programs</p>
+      <div class="contact-card">
+        <h3>Prakriti Biotech Farm</h3>
+        <p>For visits, research, or sustainability programs</p>
+        <p><strong>Focus:</strong> Organic farming & learning hub</p>
+      </div>
 
-    <h3>Women’s Training (Saheli Centre)</h3>
-    <p>For vocational training inquiries</p>
-  </div>
+      <div class="contact-card">
+        <h3>Women's Training (Saheli Centre)</h3>
+        <p>For vocational training inquiries</p>
+        <p><strong>Focus:</strong> Women's empowerment & skills</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Department Contact Table -->
+  <section class="table-section">
+    <h2>Department Contacts</h2>
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>Contact</th>
+          <th>Email</th>
+          <th>Services</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General Inquiries</td>
+          <td>+91-9XXXXXXXXX</td>
+          <td>kumarbinay51@yahoo.com</td>
+          <td>General information & support</td>
+        </tr>
+        <tr>
+          <td>Eye Hospital</td>
+          <td>+91-9XXXXXXXXX</td>
+          <td>eyehospital@rohini.org</td>
+          <td>Appointments, screenings, surgery</td>
+        </tr>
+        <tr>
+          <td>Prakriti Farm</td>
+          <td>+91-9XXXXXXXXX</td>
+          <td>farm@rohini.org</td>
+          <td>Farm visits, workshops, research</td>
+        </tr>
+        <tr>
+          <td>Saheli Centre</td>
+          <td>+91-9XXXXXXXXX</td>
+          <td>saheli@rohini.org</td>
+          <td>Vocational training programs</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -55,9 +131,38 @@
 </footer>
 
 <script>
+// Mobile menu toggle
 document.getElementById('menuToggle').onclick = function() {
   document.getElementById('navLinks').classList.toggle('active');
 };
+
+// Form submission handling
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Get form values
+  const fullName = document.getElementById('fullName').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  // Simple email validation (check for @ symbol)
+  if (!email.includes('@')) {
+    alert('Please enter a valid email address');
+    return;
+  }
+  
+  // Show success message with user's name
+  const successDiv = document.getElementById('successMessage');
+  const successText = document.getElementById('successText');
+  successText.textContent = 'Your message has been received, ' + fullName + '! We will get back to you soon.';
+  successDiv.style.display = 'block';
+  
+  // Hide the form
+  document.getElementById('contactForm').style.display = 'none';
+  
+  // Scroll to top to see success message
+  window.scrollTo(0, 0);
+});
 </script>
 
 </body>
